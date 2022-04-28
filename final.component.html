@@ -1,0 +1,47 @@
+<div *ngIf="currentLocation; else noLocation">
+<div class="row">
+        <div class="col-12">
+            <div class="header">
+                <img src='{{"/assets/"+currentLocation.name+".jpg"}}' class="image" />
+                <div class="title">
+                    {{currentLocation.label}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+    <div class="row">
+        <div class="col-12">
+            <div class="desc">
+                <div class="name">
+                    {{currentLocation.label}}
+                </div>
+
+
+
+                <div class="para">
+                    {{currentLocation.desc}}
+                </div>
+            </div>
+
+            <div class="name">
+                Nearby Attractions
+            </div>
+            
+            <br><br>
+            <div class="row">
+                <div class="col-4" *ngFor="item of [1, 2, 3]; let i=index">
+                    <img src='{{"/assets/"+currentLocation.name+"_"+(i+1)+".jpg"}}' style="width: 400px;height: 400px;" />
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</div>
+<ng-template #noLocation>
+<div class="name">
+    No Location Found
+</div>
+</ng-template>

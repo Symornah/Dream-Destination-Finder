@@ -1,0 +1,31 @@
+.image{
+    height: 70vh;
+    width: 100vw;
+
+}
+.header{
+    position: relative;
+}
+.title{
+    position: absolute;
+    bottom: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+    padding: 0 10vw;
+}
+.desc{
+    padding: 0 10vw; 
+    margin-top: 64px;
+
+}
+.name{
+    font-size: 28px;
+    font-weight: bold;
+}
+.para{
+    margin-top: 24px;
+    font-size: 20px;
+    margin-bottom: 64px;
+
+}

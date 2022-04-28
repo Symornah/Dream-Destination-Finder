@@ -1,0 +1,42 @@
+<div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">{{question.question1}}</h2>
+            <ul>
+              <li>
+                <input [(ngModel)]="answer.answer1" type="radio" class="answer" name="q1" value="city">
+                <label id="a_text_q1">City</label>
+              </li>
+              <li>
+                <input [(ngModel)]="answer.answer1" type="radio" class="answer" name="q1" value="countryside">
+                <label id="b_text_q1">Countryside</label>
+              </li>
+            </ul>
+    </div>
+        <div class="quiz-header">
+            <h2 id="question">{{question.question2}}</h2>
+            <ul>
+              <li>
+                <input [(ngModel)]="answer.answer2" type="radio" class="answer" name="q2" value="mountains">
+                <label id="a_text_q1">Mountains</label>
+              </li>
+              <li>
+                <input [(ngModel)]="answer.answer2" type="radio" class="answer" name="q2" value="sea">
+                <label id="b_text_q1">Sea</label>
+              </li>
+            </ul>  
+    </div>
+            <div class="quiz-header">
+                <h2 id="question">{{question.question3}}</h2>
+                <ul>
+                  <li>
+                    <input [(ngModel)]="answer.answer3" type="radio" class="answer" name="q3" value="hot">
+                    <label id="a_text_q1">Hot</label>
+                  </li>
+                  <li>
+                    <input [(ngModel)]="answer.answer3" type="radio" class="answer" name="q3" value="cold">
+                    <label id="b_text_q1">Cold</label>
+                  </li>
+                </ul>
+            </div>    
+</div>
+    <button type="submit" class="btn btn-primary" id="submit" (click)="onSubmit()">Submit</button>

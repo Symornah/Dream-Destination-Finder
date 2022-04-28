@@ -1,0 +1,55 @@
+    .back
+    header{
+    width: 100%; height: 100vh;
+    background-color:white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    nav{
+    width: 100%; height: 15vh;
+    display: flex; justify-content: space-between;
+    align-items: center;
+    }
+    nav .mainmenu{
+    width: 40%;
+    display: flex; justify-content: space-around;
+    }
+    main{
+    width: 100%; height: 85vh;
+    text-align: center;
+    }
+    video{
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+    .background-wrap{
+        opacity: 0.5;
+        height: 100%;
+        
+    }
+    .container1{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    section{
+        position: absolute;
+        top: 30vh;
+        margin: auto;
+        width: 100%;
+        position: absolute;
+    }
+    section h3{
+    letter-spacing: 3px; font-weight: 200;
+    }
+    section h1{
+    text-transform: uppercase;
+    }
+    section div{
+    animation:changeborder 10s infinite linear;
+    border-style: groove;
+    border: 7px  lightgreen;
+    }
+
